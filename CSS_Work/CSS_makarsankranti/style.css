@@ -1,0 +1,74 @@
+
+
+ *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: 1200px;
+    width: 1200px; */
+}
+
+.container1 {
+    background-image: url(girl.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+    position: relative;
+    /* background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%); 
+    opacity:0.8;
+
+    background: url("images/header-bg.jpg") no-repeat left top, linear-gradient(to top, #f62e71 0%, #f9ab72 100%); */
+}
+
+
+.content {
+    background-image: linear-gradient(to bottom,rgb(239, 221, 221),rgb(124, 124, 160),rgb(51, 93, 171));
+    opacity: 0.8;
+    height: 1200px;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    background-attachment: fixed;
+   
+}
+
+#content1 {
+    top: 5px;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#content1 h1 {
+    text-align: center;
+    color: red;
+    text-shadow: 10px 10px 15px rgb(218, 119, 119);
+    padding-right:120px;
+font-family: 'Courier New', Courier, monospace;
+font-size:60px;
+
+}
+
+#content1 h2{
+    text-align: center;
+    color: blue;
+    text-shadow: 10px 10px 15px rgb(91, 91, 188);
+    margin-top:1px;
+    font-family:cursive;
+    
+}
+
+#content1 p{
+    text-align: center;padding: 0px 200px;
+    font-family: cursive;
+    margin-top:10px;
+}
+#content img{
+    padding-right: 500px;
+  }

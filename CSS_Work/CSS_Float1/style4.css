@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.header{
+    background-color: rgb(233, 158, 158);
+    height:100px;
+    
+    
+}
+
+ .header h3{
+    background-color: rgb(210, 153, 153);
+   float: left;
+   padding: 20px;
+   font-size: 20px;
+   margin-left: 20px;
+   margin-top: 20px;
+
+}
+
+.header h4{
+    background-color: rgb(210, 153, 153);
+    padding: 20px;
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.container{
+    background-color: rgb(241, 187, 195);
+    height: 400px;
+    /* width: 100%; */
+    clear: right;
+}
+
+.item{
+background-color: rgb(215, 145, 145);
+float: left;
+height: 350px;
+width: 20%;
+margin: 10px;
+}
+
+.content{
+    float: left;
+    width: 70%;
+   height: 400px;
+}
+.item1{
+    background-color: rgb(232, 151, 163);
+}
+
+.content h3{
+    background-color: rgb(192, 125, 125);
+   
+    padding-right: 20px;
+    margin-top: 50px;
+    padding: 40px;
+    margin-left: 30px;
+}
+
+.footer{
+    background-color: rgb(233, 158, 158);
+    padding: 50px 0px;
+    
+}
+
+.footer h5{
+padding-left: 30px;  
+
+  font-size: 20px;
+}

@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0%;
+ }
+ 
+ 
+ div.header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+.header h2{
+    padding: 30px;
+    font-size:30px;
+
+}
+
+.container{
+    display: flex;
+}
+
+.container{
+    height: 300px;
+}
+
+.item li{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    width:150px;
+}
+
+.item1 h3{
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  div.footer {
+      background-color: black;
+      color: white;
+      height: 80px;
+  }
+  
+  .footer h2{
+      padding: 20px;
+  }
+  
