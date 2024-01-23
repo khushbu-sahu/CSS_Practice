@@ -12,7 +12,11 @@
     color: white;
     background: #f7427f;
   }
-
+/* ARROW TRANSITION */
+a:hover i{
+    transition: 1ss;
+    transform: translate(20px,0);
+}
 
 .header {
     position: fixed;
@@ -49,6 +53,7 @@ div.maincontainer{
 .nav_header a:hover {
     color: #f7427f;
 }
+
 
 .container1 {
     background-image: url(images/header-bg.jpg);
