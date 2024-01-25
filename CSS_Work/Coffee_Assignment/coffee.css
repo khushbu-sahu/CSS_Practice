@@ -72,14 +72,14 @@ background-image: linear-gradient();
    color: white;
 height: 20px;
  
-   animation-name: example;
+   animation-name: arrow;
    animation-duration: 2s;
    animation-iteration-count: infinite;
    animation-direction:alternate-reverse;
 }
 
 
-@keyframes example {
+@keyframes arrow {
     0%   { top:90%;}
     
    
