@@ -15,22 +15,23 @@
 .content1{
     width: 10%;
     background-color: rgb(37,37,37);
-    height: 500px;
+    height: 550px;
     font-weight: bold;
     border-right: 2px solid rgb(63,63,63);
 }
 .content1 h3{
     transform: rotate(270deg);
-    color: rgb(149, 116, 7);
+    color: #F7BD01;
+    
     text-align: center;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     font-weight: bolder;
 }
 
 .content2{
     width: 90%;
     background-color: black;
-    height: 500px;
+    height: 550px;
 }
 
 .navbar{
@@ -96,5 +97,36 @@ color: rgb(255,255,255);
 .content5{
     width: 90%;
     background-color: rgb(37,37,37);
-    height: 500px;
+    height: 550px;
+}
+
+.content5 h1{
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    
+}
+
+.container5{
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    margin-top:120px;
+    margin-right: 150px;
+    font-weight: 200;
+}
+.list1 li{
+    list-style-type: none;
+    font-size: 30px;
+    padding: 0px 0px 10px;
+    color: white;
+}
+
+.container6{
+    width: 100%;
+    background-color: rgb(37,37,37);
+    height: 550px;
 }
