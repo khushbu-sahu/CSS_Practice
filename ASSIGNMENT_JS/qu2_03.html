@@ -6,9 +6,12 @@
         <p id="demo"></p>
 
         <script>
+            let text="";
             for(i=1;i<=10;i++){
+                text=text+7*i + "<br>";
+                document.getElementById("demo").innerHTML=text;
                 console.log(7*i+"<br>");
-                document.write(7*i+"<br>");
+                // document.write(7*i+"<br>");
             }
         </script>
     </body>

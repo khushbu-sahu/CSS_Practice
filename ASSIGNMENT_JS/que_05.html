@@ -5,14 +5,15 @@
     </head>
     <body>
         <p>Calculate the sum of numbers from 1 to 10 </p>
-
+<p id="sum"></p>
         <script>
             let sum=0;
             for(let  i=1;i<=10;i++){
               sum=sum+i;
             }
+            document.getElementById("sum").innerHTML=sum;
             console.log(sum);
-              document.write(sum);
+              // document.write(sum);
         </script>
     </body>
 </html>

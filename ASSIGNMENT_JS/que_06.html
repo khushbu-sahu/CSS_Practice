@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>factorial program</title>
-    </head>
-    <body>
-        <p>Calculate 10! (Factorial of 10).</p>
-        <script>
-           let fact=1;
-           for(i=1;i<=10;i++){
-            fact=fact*i;
-           } 
-           document.write(fact);
-        </script>
-    </body>
+
+<head>
+    <title>factorial program</title>
+</head>
+
+<body>
+    <p>Calculate 10! (Factorial of 10).</p>
+    <p id="fact"></p>
+    <script>
+        let fact = 1;
+        for (i = 1; i <= 10; i++) {
+            fact = fact * i;
+        }
+        document.getElementById("fact").innerHTML = fact;
+        //    document.write(fact);
+    </script>
+</body>
+
 </html>

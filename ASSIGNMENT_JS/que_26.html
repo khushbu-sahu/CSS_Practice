@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <p>Write a Simple Calculator Program using switch Statement</p>
+    <p id="cal"></p>
+    <script>
+        let a = +prompt("Enter the value of a");
+        // let opr = prompt("Enter any operator");
+        let b = +prompt("Enter the value of b");
+        let opr = prompt("Enter any operator");
+
+
+        switch (opr)
+         {
+            case "+":
+                let res = a + b ;
+                document.getElementById("cal").innerHTML=res;
+                console.log(res);
+                break;
+                case "+":
+                let res1 = a - b ;
+                document.getElementById("cal").innerHTML=res1;
+                console.log(res1);
+                break;
+                case "*":
+                let res2 = a * b ;
+                document.getElementById("cal").innerHTML=res2;
+                console.log(res2);
+                break;
+                case "+":
+                let res3 = a / b ;
+                document.getElementById("cal").innerHTML=res3;
+                console.log(res3);
+                break;
+        }
+    </script>
+</body>
+
+</html>
