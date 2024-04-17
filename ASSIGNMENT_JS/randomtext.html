@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let i=0;
+            function changetext(){
+                console.log("changed text function is activated");
+                const text=["C Programming","Javascript","React"];
+                console.log(i);
+                let  text1=text[i];
+                console.log(text1);
+                document.getElementById('demo').innerHTML="Courses like:" + text1;
+
+                if(i<text.length-1){
+
+                    console.log("Inside if");
+                    i++;
+                }
+                else{
+                    console.log("Inside else");
+                    i=0;
+                }
+            }
+            setInterval(changetext, 1500);
+
+        </script>
+    </body>
+</html>

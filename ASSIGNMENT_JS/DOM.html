@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+   <p>Create a h2 heading element with text "Hello Javascript".Append "from Apna College students" to this text using JS.</p> 
+
+   <h2>Hello JavaScript</h2>
+
+   <script>
+let h2=document.querySelector("h2");
+console.dir(h2.innerText);
+h2.innerText = h2.innerText + "from Apna College Students"; //concetation
+
+
+   </script>
+</body>
+</html> -->
+
+<!-- Create 3 divs with common class nam2="box",Accesss them and add some unique text to each of them. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM Practice</title>
+</head>
+<body>
+   <div class="box">Hello</div>
+   <div class="box">Hello</div>
+   <div class="box">Hello</div>
+   <script>
+      let text = document.querySelectorAll(".box");
+      // console.log(text);
+      // text[0].innerText ="new unique value";
+      let idx=1;
+      for(let x of text){
+         // console.log(x.innerText);
+         x.innerText =`Unique Values  ${idx}`;
+         idx++;
+      }
+
+   </script>
+</body>
+</html>

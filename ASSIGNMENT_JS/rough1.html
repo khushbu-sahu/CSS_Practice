@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html>
+        <head></head>
+        <body>
+            <p>print numvbers from 1 to 100</p>
+            <script>
+              
+              let temp=0;
+
+              for(i=2;i<=10;i++){
+               
+                for(j=1;j<10;j++){
+                    let sum=i*j;
+                    console.log(sum);
+                }
+              }
+            </script>
+        </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <h5>Create a function that will return a Boolean specifying if a number is prime.</h5>
+    <!-- Create a function that will return a Boolean specifying if a number is prime. -->
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            let num = prompt("Enter any positive number");
+            num = parseInt(num); // Convert input to integer
+            if (myPrime(num)) {
+                document.getElementById('demo').innerHTML = num + " is prime.";
+            } else {
+                document.getElementById('demo').innerHTML = num + " is not prime.";
+            }
+        }
+
+        function myPrime(num) {
+            if (num <= 1) {
+                return false;
+            }
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        // Call myFunction to prompt the user for input
+        myFunction();
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- <script>
+  let n = prompt("Enter a number:");
+
+  function checkprime(n){
+      if(n==1){
+          alert("1 is not a prime or composite number.");
+          console.log("1 is not a prime or composite number.");          
+      }
+      else{
+          if(n<1){
+              alert("Negative number can't be a prime number.");
+              console.log("Negative number can't be a prime number.");
+          }
+          else{
+              for(i=2; n > i; i++)
+              {
+                  if(n%i==0){
+                      alert("False");
+                      console.log("False");
+                      break;
+                  }
+                  else{
+                      alert("True");
+                      console.log("True");
+                  }
+              }
+          }
+      }
+  }
+  let value= checkprime(n);
+</script> -->

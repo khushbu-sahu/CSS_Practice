@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and object</title>
+</head>
+
+<body>
+
+    <script>
+
+        // OBJECTS IN JAVASCRIPT
+        // const student={
+        //    fullname:"khushi sahu",
+        //    marks: 85.6,
+        //    printMarks:function(){
+        //     console.log("marks =",this.marks);//this means student.marks
+        //    },
+        // };
+        // console.log(student.fullname)
+        // console.log(student);
+
+
+        // const employee = {
+        //     calcTax(){
+        //         console.log("text rate is 10%");
+        //     },
+        //      calcTax2:function(){
+        //         console.log("text rate is 10%");
+        //     },
+
+        // };
+        // console.log(employee.calcTax());
+
+
+        // const karanArjun ={
+        //     salary :50000,
+        // };
+        // // console.log(karanArjun);
+
+        // karanArjun.__proto__= employee;
+        // console.log(karanArjun);
+        // console.log(karanArjun.calcTax());
+
+
+        // CLASSES IN JAVASCRIPT
+
+        // class ToyotaCar {
+        //     start() {
+        //         console.log("start");
+        //     }
+        //     stop() {
+        //         console.log("stop");
+        //     }
+
+        //     setBrand(brand){
+        //         this.brandName=brand;
+        //     }
+        // }
+        // console.log(ToyotaCar);
+        // let fortuner = new ToyotaCar();
+        // fortuner.setBrand("fortuner");
+        // console.log(fortuner);
+
+        // console.log(fortuner.start());
+
+        // class ToyotaCar{
+        //     constructor(brand , mileage){
+        //         console.log("creating new object");
+        //         this.brand = brand;
+        //         this.mileage =mileage;
+        //     }
+        //     start() {
+        //         console.log("start");
+        //     }
+        //     stop() {
+        //         console.log("stop");
+        //     }
+
+        //     // setBrand(brand){
+        //     //     this.brandName=brand;
+        //     // }
+        // }
+
+        // let fortuner = new ToyotaCar("fortuner" , 10);
+        // console.log(fortuner);
+        // let lexus = new ToyotaCar("lexus",12);
+        // console.log(lexus);
+
+        // INHERITANCE IN JAVASCRIPT  (passing down properties and methods from parent class to a child class)
+
+        // class Parent{
+        //     hello(){
+        //         console.log("hello");
+        //     }
+        // }
+        //     class Child extends Parent{}
+        //     let obj = new Child();
+        //     console.log(obj.hello());
+
+        class Person{
+            eat(){
+                console.log("eat");
+            }
+            sleep(){
+                console.log("sleep");
+            }
+        }
+
+        class Engineer extends Person{
+            work(){
+                console.log("solve problems, build something");
+            }
+        }
+        
+        let engObj =new Engineer();
+        console.log(engObj.Engineer());
+                
+
+  
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>

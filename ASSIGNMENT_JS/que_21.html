@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <!-- Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers -->
+    <p id="demo"></p>
+    <script>
+        let num = +prompt("Enter any positive numbers");
+
+        function interger(num) {
+            if (num % 2 == 0) {
+
+                console.log(num + " is even number");
+                document.getElementById('demo').innerHTML = num + " is even number";
+            }
+            else {
+                console.log(num + " is odd number");
+                document.getElementById('demo').innerHTML = num + " is odd number";
+            }
+        }
+        interger(num);
+    </script>
+</body>
+
+</html>

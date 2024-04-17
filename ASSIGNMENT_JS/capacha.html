@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/8282a47725.js" crossorigin="anonymous"></script>
+    <title>Captchaproject</title>
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <h2>Random Captcha</h2>
+    <div style="display: flex;">
+        <div id="demo" style="height:30px ; width: 150px;border: 2px solid black;margin-right: 20px;border-radius: 5px;color: white; background-color: black;text-align: center;font-size:20px;"></div>
+        <button onclick="randomCaptcha()" style="border-radius: 5px;"><i class="fa-solid fa-rotate-right"  style="color: blue;"></i></button>
+    </div> <br> <br>
+    <input type="text" placeholder="Enter Captcha..." id="demo2" > <button  onclick="captchaCheck()">check</button>
+  
+    <p id="dome"></p>
+
+    <script>
+      
+        function randomCaptcha() {
+            const captcha = ["A","B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+             "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+           " a", "b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","v","y","z","1","2","3","4","5","6","7","9","0","@","$","%","&","*","^","#","!" ];
+           let randomIndex='';
+        let randomChar='';
+            
+        for(let i=0; i < 6; i++){
+             randomIndex = Math.floor(Math.random() * captcha.length);
+            console.log(randomIndex);
+
+            randomChar += captcha[randomIndex];
+            console.log(randomCaptcha);
+        }
+        document.getElementById("demo").innerHTML = randomChar;
+        index=randomChar;
+        }
+
+        function captchaCheck(){
+            let checkValue=document.getElementById('demo2').value;
+            if(checkValue === index){
+                document.getElementById('dome').innerHTML = "Your Captcha is Correct."
+                checkValue.value="";
+
+                
+            }
+            else{
+                document.getElementById('dome').innerHTML = "Incorrect Captcha , please try again."
+                checkValue.value="";
+
+
+            }
+            
+
+         
+        }
+            
+        
+
+
+
+    </script>
+</body>
+
+</html>

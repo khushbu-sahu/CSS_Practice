@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  id="box"  name="div">This is a div
+        <ul>List</ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </div>
+    
+    <!-- <p class="para">This is a paragraph</p> -->
+    <p class="para">This is a paragraph</p>
+
+    <!-- <script>
+let value = document.querySelector("div");
+console.log(value);
+
+//FOR getAttributes
+let id=value.getAttribute("id");
+console.log(id);
+
+let name=value.getAttribute("name");
+console.log(name);
+
+
+//For setAttributes
+let value1=document.querySelector("p");
+console.log(value1);
+
+let changeName=value1.setAttribute("class","paragraph");
+console.log(changeName);
+
+    </script> -->
+
+    <script>
+        //For Creating new Elements
+        let newBtn=document.createElement("button");
+        console.log(newBtn);
+        newBtn.innerText = "I am button";
+
+        let div=document.querySelector("div");
+        console.log(div);
+        div.append(newBtn); //append used for create new elements at the end (inside)
+
+        div.prepend(newBtn);  //prepend used for create new element at the beginning of the elements (inside)
+
+        div.before(newBtn); //adds before the node (outside)
+
+        div.after(newBtn); //adds after the node  (outside)
+
+        let newHeading = document.createElement("h1");
+        newHeading.innerText = "I am new heading";
+        document.querySelector("body").prepend(newHeading);
+
+        //Remove Elements
+        newHeading.remove();
+        document.querySelector("p").remove();
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+
+            height: 250px;
+            width: 300px;
+            margin-left: 600px;
+            background-color: aliceblue;
+            text-align: center;
+            margin-top: 200px;
+            border-radius: 15px;
+        }
+
+        button {
+
+            text-align: center;
+            margin-top: 70px;
+            padding: 10px 50px 10px 50px;
+            border-radius: 15px;
+            border: 1px solid red;
+            background-color: rgb(138, 73, 73);
+            font-size: 16px;
+            /* color: white; */
+
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(130, 50, 50);">
+    <!-- <p id="demo">you click the button this times</p> -->
+    <div><button onclick="increment()">INCREMENT</button>
+<br><br>
+        <!-- <p id="demo">0</p> -->
+        <p> You click the button this times:<span id="demo"></span></p>
+    </div>
+
+
+    <script>
+        function increment() {
+            let i = document.getElementById('demo');
+
+            let value = i.innerHTML;
+            value++;
+
+            console.log(value);
+            document.getElementById('demo').innerHTML=value;
+
+            // document.getElementById('demo').innerHTML = "you click the button this times:" + value;
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id="counter"></p>
+        <button onclick="increment()">Increment</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="decrement()">Decrement</button>
+
+        <script>
+            let count=0;
+
+            function increment(){
+                count++;
+                updateCounter();
+            }
+
+            function decrement(){
+                count--;
+                updateCounter();
+            }
+
+            function reset(){
+                count=0;
+                counter.style.color="black";
+                updateCounter();
+
+            }
+
+            function updateCounter(){
+                let counter=document.getElementById("counter");
+                counter.innerHTML=count;
+                // counter.style.color=count > 0 ? "green" : "red";
+            if(count>0){
+                counter.style.color="green";
+            } else if(count < 0){
+                counter.style.color="red";
+            }
+            
+            }
+        </script>
+    </body>
+</html>

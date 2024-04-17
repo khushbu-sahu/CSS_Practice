@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+        <h5>Create a function that will merge two arrays and return the result as a new array</h5>
+        <!-- Create a function that will merge two arrays and return the result as a new array -->
+        <p id="demo"></p>
+        <script>
+
+                const arr1 = ["html", "css", "javascript", "reactjs"];
+                const arr2 = ["java", "mongodb", "php", "phyton"];
+                function merged(myarr1, myarr2) {
+                        const arr = arr1.concat(arr2);
+                        document.getElementById("demo").innerHTML = arr;
+                        console.log(arr);
+                }
+                merged(arr1, arr2);
+
+        </script>
+
+</body>
+
+</html>

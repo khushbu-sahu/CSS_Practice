@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h5>Create a function that will return a Boolean specifying if a number is prime.</h5>
+        <!-- Create a function that will return a Boolean specifying if a number is prime. -->
+
+        <p id="demo"></p>
+       <script>
+        let temp="";
+        let num= +prompt("Enter any positive number");
+       
+
+function checkPrime(){
+    if(num<=1){
+        temp+=num;
+        document.getElementById('demo').innerHTML = temp  + "is not a prime number";
+        console.log("false");
+        return false;
+    }
+    for(i=2 ; i< num ;i++){
+        if(num % i === 0) {
+            temp+=num;
+        document.getElementById('demo').innerHTML = temp  +  "is not a prime number";
+            console.log("false");
+            return false;
+        }
+    }
+    temp+=num;
+        document.getElementById('demo').innerHTML = temp  +  "is a prime  number";
+    console.log("true");
+    return true;
+    
+}
+console.log(checkPrime());
+
+//  console.log(checkPrime());
+
+        
+       </script>
+
+    </body>
+</html>
+
+
+<!-- // function isPrime(n) {
+    //         if (n <= 1) {
+    //             return false;
+    //         }
+    //         for (let i = 2; i < n; i++) {
+    //             if (n % i === 0) {
+    //                 return false;
+    //             }
+    //         }
+    //         return true;
+    //     } -->
+
+
+
+<!-- 
+    // function myFunction(){
+        // // let num=prompt("Enter any positive number");
+        //  function myPrime(prime){
+        //     if(n<=1){
+        //         return false;
+        //     }
+        //     for(i=2;i<num;i++){
+        //         if(n%i==0){
+        //             return false;
+                   
+                
+        //         }
+        //     }
+        //     return true;
+        
+
+        //  }
+        
+        // } -->

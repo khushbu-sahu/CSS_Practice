@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button:hover{
+            transform: scale(1.2);
+color: red;        }
+    </style>
+</head>
+
+<body  style="background-color: rgb(146, 188, 146);text-align: center;margin: 200px;font-size: 30px;">
+    <button onclick="changedQuotes()" style="background-color: rgb(200, 240, 240);height: 40px;width: 200px;border: none;border-radius: 10px;border: 2px solid black;transition: 5s;">Genrate Quotes:</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function changedQuotes(){
+        let quote = [
+            {
+                Quotes: "Success is not find ,failure is not fatal.It is the courage to continue that counts.",
+                Author: "Winston Churchill",
+            },
+            {
+                Quotes: "The only way to do great work is to love what you do",
+                Author: "Steve Jobs!",
+            },
+            {
+                Quotes: "Strive not to be a success!but rather to love what you do",
+                Author: "Albert Einstein!",
+            },
+            {
+                Quotes: "Believe you can and you're halfway there!",
+                Author: "Theodere Roosevelt!",
+            }
+        ]
+        let result=Math.floor(Math.random()*quote.length );
+        console.log(result);
+
+       let result1= document.getElementById('demo').innerHTML=quote[result].Quotes;
+        document.getElementById('demo1').innerHTML=quote[result].Author;
+       console.log(result1);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <p id="demo"></p>
+    <p id="even"></p>
+    <p id="odd"></p>
+
+    <script>
+        let myArr = prompt("Enter numbers separated by commas");
+        const numArr = myArr.split(",");
+        console.log(numArr);
+        const evenArr = [];
+        const oddArr = [];
+
+
+        let i = 0;
+
+        while (i < numArr.length) {
+            if (numArr[i] % 2 == 0) {
+                evenArr.push(numArr[i])
+            }
+            else {
+                oddArr.push(numArr[i])
+            }
+            i++;
+        }
+
+        document.getElementById("demo").innerHTML = numArr;
+        document.getElementById("even").innerHTML = "This is array of even numbers:" + evenArr;
+        document.getElementById("odd").innerHTML = "This is array of odd numbers:" + oddArr;
+    </script>
+</body>
+
+</html>

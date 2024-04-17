@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body style="background-color: rgb(201, 187, 216);">
+    <h5>ToDo List</h5>
+    <div id="add"></div>
+
+    <div style="text-align: center;margin-top: 250px;">
+        <input type="text" name="input" id="input" placeholder="Enter text here">
+        <button onclick="addItem()">Add Items</button>
+        <ul id="list">
+           
+        </ul>
+    </div>
+
+    <script>
+        let arr = [];
+
+        function addItem() {
+            const item = document.getElementById('input').value;
+
+
+            if (item) {
+                arr.push(item);
+                document.getElementById('list').innerHTML+=item + "</br>";
+                console.log(item);
+                document.getElementById('input').value = '';
+            }
+            else {
+                alert('Please enter item name!')
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <p id="demo"></p>
+            <!-- Find the maximum number in an array of numbers (Take a minimum of 8 numbers in the array). -->
+<script>
+    const arr=[45,25,80,15,88,99];
+    let num=arr[0];
+
+    for(let i=0 ; i<arr.length ; i++ ){
+        if(arr[i]>num){
+            num = arr[i];
+            console.log(num);
+
+        }
+    }
+    document.getElementById('demo').innerHTML="Maximum in an array is :"+num;
+    console.log(num);
+
+</script>
+        </body>
+    </head>
+</html>

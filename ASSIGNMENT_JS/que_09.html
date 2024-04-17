@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h5>Calculate the sum of numbers in an array of numbers. (Take a minimum of 8 numbers in the array).</h5>
+        <!-- Calculate the sum of numbers in an array of numbers. (Take a minimum of 8 numbers in the array). -->
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+    let num=[1,2,3,4,5,6,7,8,9,10]
+    let sum=0;
+    let text=0;
+    let text1=0;
+
+    // for(let val of num){
+    // //    console.log(total);
+    // sum = sum + val;
+    // }
+    // console.log(sum);
+    // text=text+sum;
+    // document.getElementById("demo").innerHTML = text;
+
+    // let avg=sum / num.length;
+    // console.log(`average number is = ${avg}`);
+    // text1= `average number is ${text1 + avg}`;
+    // document.getElementById("demo1").innerHTML = text1;
+
+    for(let i=1;i<=num.length;i++){
+        sum=sum+i;
+        console.log(sum);
+        let avg=sum/num.length;
+        console.log(avg);
+        document.getElementById("demo1").innerHTML="Average number is" +":" + avg;
+    }
+
+
+</script>
+    
+    </body>
+</html>

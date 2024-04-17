@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let name = prompt("Enter any text");
+             function pallindrome(){
+                let rev = name.split('').reverse().join("");
+
+                if( name==rev){
+                    document.getElementById('demo').innerHTML ="It is a  pallinrome";
+
+                    return true;
+                }
+                else{
+                document.getElementById('demo').innerHTML ="It is not pallinrome";
+
+                return false;
+             }
+            }
+             pallindrome();
+        </script>
+    </body>
+</html>
+
+

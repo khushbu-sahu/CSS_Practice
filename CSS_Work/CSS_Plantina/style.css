@@ -392,3 +392,62 @@ color: gray;
 .content16 a{
     color: rgb(159, 153, 153);
 }
+
+
+/* overlay effect */
+
+.overlaydiv{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+
+}
+.move {
+    position: relative;
+    width: 25%;
+    display: flex;
+    /* justify-content: space-around; */
+    /* margin: 30px; */
+  }
+  
+  .move1 {
+    /* display: block; */
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+    /* justify-content: space-around; */
+
+    /* height:100%; */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #008CBA; */
+    background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%);
+    opacity: 0.8;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .move:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }

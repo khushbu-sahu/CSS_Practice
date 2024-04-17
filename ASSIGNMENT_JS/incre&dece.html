@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin-top: 250px;
+            text-align: center;
+            font-size: 40px;
+            background-color: lightcyan;
+        }
+
+    
+
+    </style>
+</head>
+
+
+
+<body> 
+   <div class="box" >
+    <h3>COUNTER</h3>
+   
+    <button onclick="totalplusClick()"  style="background-color: black;color: white;border: 0px solid black;height: 25px; width: 25px;">+</button>  
+    <button onclick="ResetValue()"   style="background-color: white;color: black;border: 0px solid black;width: 60px;">RESET</button>
+    <button onclick="totalminusClick()"   style="background-color: black;color: white;border: 0px solid black;height: 25px; width: 25px;">-</button>
+   
+    <p id="demo"></p>
+
+    </div>
+    
+    <script>
+
+        let counter = 0;
+
+        function totalplusClick() {
+            counter++;
+            document.getElementById("demo").innerHTML = counter;
+            console.log(counter);
+        }
+
+
+        function totalminusClick() {
+            counter--;
+            document.getElementById("demo").innerHTML = counter;
+            console.log(counter);
+        }
+        
+
+        function ResetValue() {
+            counter = 0;
+            document.getElementById("demo").innerHTML = counter;
+            console.log(counter);
+
+        }
+
+
+   
+    
+     </script>
+
+
+
+
+</body>
+
+</html>

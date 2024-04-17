@@ -10,8 +10,37 @@
         Output Number after swapping first and last digit: 52341
     </p>
     <p id="swap"></p>
+
+    <!-- let number = +prompt("Enter any numbers more than 2"); -->
+
     <script>
-        
+        let number = +prompt("Enter any numbers more than 2");
+        let total= swaping (number);
+        function swaping(num) {
+            let result = num.toString().split("");
+            console.log(result);
+            let temp = result[0];
+            console.log(temp);
+            let temp1 = result[result.length - 1];
+            console.log(temp1);
+
+            result.shift();
+            console.log(result);
+
+            result.pop();
+            console.log(result);
+
+            result.push(temp);
+            console.log(result);
+
+            result.unshift(temp1);
+            console.log(result);
+
+
+            return result.join('');
+        }
+        console.log(total);
+
 
     </script>
 </body>

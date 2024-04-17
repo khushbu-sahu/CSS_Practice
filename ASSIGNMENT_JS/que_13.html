@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <p id="demo"></p>
+    <!-- Rotate an array to the left 1 position (For example if array elements are 2,8,3 after rotation it should be 8,3,2) -->
+    <script>
+        let arr = [2, 8, 3];
+        console.log(arr);
+        let arr1 = arr[2];
+        console.log(arr1)
+        arr.pop();
+        arr.unshift(arr1);
+        console.log(arr);
+        document.getElementById('demo').innerHTML = arr;
+    </script>
+</body>
+
+</html>

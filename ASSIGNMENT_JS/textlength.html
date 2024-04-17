@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- Calculate the length of string -->
+        <h1>Type a Word in a box!</h1>
+
+        <input type="text" id="inputtext">
+        <button onclick="calculate()">Submit</button>
+        <p id="demo"></p>
+
+        <script>
+            function calculate(){
+                let  text=document.getElementById('inputtext').value;
+                console.log(text);
+                let result=text.length;
+                console.log(result);
+                document.getElementById('demo').innerHTML=result;
+
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 200px;
+            background-color: linen;
+        }
+        .btn{
+            border: 2px solid black;
+            background-color: rgb(231, 217, 202);
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+<h2>Different Font Style</h2>
+    <input type="text" id="demo" oninput="textwrite()" style="border: 2px solid black;"> <br> <br>
+
+    <div>
+        <button onclick="uppercase()" class="btn">Uppercase</button>
+        <button onclick="lowercase()" class="btn">Lowercase</button>
+        <button onclick="capatlize()" class="btn">Capatlize</button><br><br>
+        <button onclick="bold()" class="btn">Bold</button>
+        <button onclick="italic()" class="btn">Italic</button>
+        <button onclick="underline()" class="btn">Underline</button>
+        <button onclick="linethrough()" class="btn">Line-Through</button>
+    </div>
+    <p id="demo1"></p>
+
+
+    <script>
+        function textwrite() {
+            let text1 = document.getElementById('demo').value;
+            document.getElementById('demo1').innerHTML = text1;
+
+        }
+        function uppercase() {
+            let text2 = document.getElementById('demo').value;
+            console.log(text2);
+            let result = document.getElementById('demo1').style.textTransform='uppercase';
+            console.log(result);
+        }
+        function lowercase() {
+            let text2 = document.getElementById('demo').value;
+            console.log(text2);
+            let result = document.getElementById('demo1').style.textTransform='lowercase';
+            console.log(result);
+        }
+        function capatlize() {
+            let text2 = document.getElementById('demo').value;
+            console.log(text2);
+            let result = document.getElementById('demo1').style.textTransform='capitalize';
+            console.log(result);
+        }
+
+        function bold() {
+            let text2 = document.getElementById('demo').value;
+            console.log(text2);
+            let result = document.getElementById('demo1').style.fontWeight = 'bold';
+            console.log(result);
+            // text2.value="";
+
+        }
+        function italic() {
+            let text2 = document.getElementById('demo').value;
+            console.log(text2);
+            let result = document.getElementById('demo1').style.fontStyle = 'italic';
+            console.log(result);
+        }
+        function underline() {
+            let text2 = document.getElementById('demo').value;
+            console.log(text2);
+            let result = document.getElementById('demo1').style.textDecoration = 'underline';
+            console.log(result);
+        }
+        function linethrough() {
+            let text2 = document.getElementById('demo').value;
+            console.log(text2);
+            let result = document.getElementById('demo1').style.textDecoration = 'line-through';
+            console.log(result);
+        }
+
+    </script>
+</body>
+
+</html>

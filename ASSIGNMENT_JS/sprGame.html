@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h2>Rock Paper Scissors</h2>
+    <div class="option">
+        <button onclick="play('Rock')">Rock</button>
+        <button onclick="play('Paper')">Paper</button>
+        <button onclick="play('Scissor')">Scissor</button>
+    </div>
+
+    <div>
+        <div id="player-choice">Your Choice:</div>
+        <div id="computer-choice">Computer's Choice:</div>
+        <div id="result">Result:</div>
+    </div>
+
+    <script>
+
+        function computerPlay() {
+            let arr = ["Rock", "Paper", "Scissor"];
+            console.log(arr);
+
+            let randomnum = arr[(Math.floor(Math.random() * arr.length))];
+            console.log(randomnum);
+            document.getElementById('computer-choice').innerHTML = "Computer's Choice:" + randomnum;
+            return randomnum;
+        }
+
+
+        function play(playerchoice) {
+            document.getElementById("player-choice").innerHTML = "Yours Choice:" + playerchoice;
+
+            let computerchocie = computerPlay();
+            let result = "";
+
+            if (playerchoice === computerchocie) {
+                result = "It's a tie !";
+            } else if ((playerchoice === "Rock" && computerchocie === "Scissor")|| 
+            (playerchoice === "Paper" && computerchocie === "Rock")||
+            (playerchoice === "Scissor" && computerchocie === "Paper")) {
+                result = "You Win!";
+            }
+            else {
+                result = "You lose";
+            }
+            console.log(result);
+            document.getElementById('result').innerHTML = "Result:" + result;
+
+        }
+
+        
+    </script>
+</body>
+
+
+</html>

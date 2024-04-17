@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h5>Calculate the sum of numbers in an array of numbers. (Take a minimum of 8 numbers in the array).</h5>
+        <!-- Calculate the sum of numbers in an array of numbers. (Take a minimum of 8 numbers in the array). -->
+<p id="demo"></p>
+<script>
+    let num=[1,2,3,4,5,6,7,8,9,10]
+    let sum=0;
+    let text=0;
+
+    for(let total of num){
+    //    console.log(total);
+    sum = sum + total;
+    }
+    console.log(sum);
+    text=text+sum;
+    document.getElementById("demo").innerHTML = text;
+
+
+    // for(let i=0 ;i<=num.length ; i++){
+    //     text=text+i;
+    //     console.log(text);
+    // }
+</script>
+    
+    </body>
+</html>

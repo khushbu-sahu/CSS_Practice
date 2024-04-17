@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div{
+            text-align: center;
+            margin-top: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <form action="">
+        <label for="char">Enter Text Here:</label><br><br>
+        <input type="text" name="text" id="char">
+    </form>
+<br>
+    <button type="button" onclick="calculate()">Calculate</button>
+    <!-- <p id="demo"></p> -->
+    <p>Result: <span id="demo"></span> </p>
+</div>
+    <script>
+        function calculate() {
+            let a = document.getElementById("char").value;
+            console.log(a);
+            let total = a.length;
+            console.log(total);
+            document.getElementById("demo").innerHTML = total;
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
+
+
+

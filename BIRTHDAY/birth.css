@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bodoni Moda', serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(rgba(198, 111, 111, 0.1),rgba(204, 153, 153, 0.1)),url(bday.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: url("vecteezy_happy-birthday-animation-with-ballons-and-particles-suitable_5470218.mp4"); */
+    /* background-image: linear-gradient(rgba(255));
+    background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%),url(download.gif);
+    background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%); */
+    /* opacity: 0.8; */
+    /* height: 750px; */
+    /* width: 100%; */
+   
+
+}
+body h1:hover{
+    transform: scale(0.4);
+    color: white;
+}
+.container{
+    perspective: 1000px;
+}
+.card{
+    width: 280px;
+    height: 360px;
+    position: absolute;
+    top: 100px;
+    left: 230px;
+    transition: 3s;
+    transform-style: preserve-3d;
+}
+.card:hover{
+    transform: rotateY(180deg);
+    /* background-color: red; */
+}
+.block{
+    position: absolute;
+    top:200px;
+    right: 600px;
+    perspective: 800px;
+    transition: 2s;
+}
+.block:hover{
+    transform: scale(1.2,0.10);
+}
+.outside,.inside{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1.5rem;
+}
+.outside{
+    background-color: blanchedalmond;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.outside h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: salmon;
+    margin-bottom: 30px;
+}
+.inside{
+    /* background-color: rgb(255, 244, 79); */
+    background-color: red;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+    transform: rotateY(360deg);
+}
+.inside h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.1s;
+}
+
+.inside h3:hover{
+    color: white;
+}
+
+.inside:hover{
+    background-color: rgb(0, 0, 0);
+}
+.frames{
+    width: 400px;
+    height: 150px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.8rem;
+
+    transform: rotateY(-230deg) rotateX(20deg);
+    position: absolute;
+}
+.frames img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.frames p{
+   font-size: 20px;
+   font-weight: bold;
+   transform: rotateY(180deg);
+}
+.frames:nth-child(1)
+{
+    top:-120px;
+    z-index: -1;
+    background-color: coral;
+    /* transform: rotateY(90deg); */
+
+}
+.frames:nth-child(2){
+    background-color: goldenrod;
+}
+.frames:nth-child(3)
+{
+    top:100px;
+    background-color: burlywood;
+}
+
+.frames:nth-child(4)
+{
+    z-index: 10;
+    top:200px;
+    background-color: rgb(230, 155, 57);
+}

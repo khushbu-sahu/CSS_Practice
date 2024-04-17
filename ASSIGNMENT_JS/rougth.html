@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <!-- <h2>How to write object in javascript</h2> -->
+    <script>
+        
+//Using javascript Object Literals
+        // const person={
+        //     firstName:"khushi",
+        //     age:"21",
+        // }
+        // let result=person.firstName;
+        // console.log(result);
+        // let result1=person["age"];
+        // console.log(result1);
+
+
+        //Using javascript new object()  keyword
+        // const person=new Object();
+        // person.firstName="John";
+        // person.lastName="Doe";
+        // person.age="20";
+        // let result = person.firstName + " "+ person.lastName + " is " + person.age  + "years old!";
+        // console.log(result);
+
+        //Using for....in loop
+        // const person={
+        //     firstName:"khushi",
+        //     age:"21",
+        // } 
+        // let text="";
+        // for(let x in person){
+        //     text += person[x]+ "";
+        //     console.log(text);
+
+        // }
+
+
+        //Deleting property in delete keyword
+        // const person={
+        //     firstName:"khushi",
+        //     age:"21",
+        // };
+
+        // delete person.age;
+        // console.log(person.firstName + "" + person.age)
+
+
+        const person = {
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        console.log(person);
+
+        const person1 = {
+            firstName:"John",
+            lastName : "Doe"
+        }
+        
+        const person2 = {
+            firstName:"Marry",
+            lastName : "Doe"
+        }
+       let result = document.getElementById("demo").innerHTML = person.fullName.bind(person2);
+       console.log(result);
+
+
+    </script>
+</body>
+</html>

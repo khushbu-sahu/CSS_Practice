@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body id="myBody">
+
+    <button onclick="mycolor()">Click me</button>
+    <script>
+        function mycolor() {
+            console.log("changed bgcolor function is activated");
+            const colors = ["cyan", "red", "pink", "black", "purple", "brown", "yellow"];
+            let randomIndex = Math.floor(Math.random() * colors.length);
+            let color = colors[randomIndex];
+            console.log(color);
+            document.getElementById("myBody").style.backgroundColor = color;
+        }
+    </script>
+</body>
+
+</html>

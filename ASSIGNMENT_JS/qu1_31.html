@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h5>Write a program that prints the numbers from 1 to 100. But for multiples of three, print “Fizz” instead of the number, and for the multiples of five, print “Buzz”. For numbers that are multiples of both three and five, print “FizzBuzz”. </h5>
+        <!-- Write a program that prints the numbers from 1 to 100. But for multiples of three, print “Fizz” instead of the number, and for the multiples of five, print “Buzz”. For numbers that are multiples of both three and five, print “FizzBuzz”. -->
+<p id="demo"></p>
+<script>
+    let text="";
+for(i=1;i<100;i++){
+    if(i%3==0 && i%5==0){
+        text= text+i + " is a FIZZBUZZ" + "<br>";
+        document.getElementById("demo").innerHTML=text ;
+        console.log("FIZZBUZZ")
+    }else if(i%3==0){
+        text=text+i +  " is a FIZZ"+ "<br>";
+        document.getElementById("demo").innerHTML=text;
+        console.log("FIZZ")
+    }
+    else if(i%5==0){
+        text=text+i +" is a BUZZ"+ "<br>";
+        document.getElementById("demo").innerHTML=text;
+        console.log("BUZZ")
+    }
+}
+
+    
+</script>
+    </body>
+</html>

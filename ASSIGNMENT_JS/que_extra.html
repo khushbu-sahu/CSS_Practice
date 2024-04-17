@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h5>The first element ,10,is not prime so we add 3 to it to get 13 which is a prime numbeer .The second element ,12
+        we add 1,so it is marked as 13.The third element,15 is not a prime number so we add 2 to it to get 17 which is a
+        prime number and so on.</h5>
+
+    <!-- The first element ,10,is not prime so we add 3 to it to get 13 which is a prime numbeer .The second element ,12
+        we add 1,so it is marked as 13.The third element,15 is not a prime number so we add 2 to it to get 17 which is a
+        prime number and so on. -->
+
+        <p id="demo"></p>
+    <script>
+        let inputArray = [8, 11, 13, 24];
+        let startRange = 1;
+        let endRange = 4;
+        let result = [];
+        const outputArray = myPrimeArray( startRange, arr,endRange);
+        let n;
+
+        function myPrime(n) {
+            if (n <= 1) {
+                return false;
+            }
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function myPrimeArray(startRange, arr, endRange) {
+
+            for (let i = 0; i < arr.length; i++) {
+                let num = arr[i];
+                console.log(num);
+
+                  let primeFound=false; 
+
+
+                for ( let j = startRange; j <= endRange; j++) {
+                    let num1 = num + j;
+                    console.log(num1);
+
+
+                    if (myPrime(num1)) {
+                        result.push(num1);
+                        primeFound = true;
+                        break;
+                    }
+
+                }
+
+                if (!primeFound) {
+                    result.push(-1);
+                    console.log(result);
+                }
+
+            }
+
+        }
+
+        console.log(result);
+        document.getElementById("demo").innerHTML=result;
+
+
+    </script>
+</body>
+
+</html>

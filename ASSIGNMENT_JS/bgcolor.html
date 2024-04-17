@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body id="myBody">
+
+    <button onclick="mycolor()">Click me</button>
+    <script>
+        let i=0;
+        function mycolor() {
+            console.log("changed bgcolor function is activated")
+            const colors = ["cyan", "red", "pink", "black", "purple", "brown", "yellow"];
+            console.log(i);
+            let color = colors[i];
+            console.log(color);
+            document.getElementById("myBody").style.backgroundColor = color;
+
+            if (i < colors.length - 1) {
+                console.log("Inside if");
+                i++;
+            }
+            else {
+                // document.getElementById("demo").style.backgroundColor=colors[counter];
+                console.log("Inside else");
+
+                i = 0;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

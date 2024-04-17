@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/8282a47725.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h2>Random Captcha</h2>
+    <div style="display: flex;">
+        <div id="demo" style="height:30px ; width: 150px;border: 2px solid black;margin-right: 20px;border-radius: 5px;color: white; background-color: black;text-align: center;font-size:20px;"></div>
+        <button onclick="randomCaptcha()" style="border-radius: 5px;"><i class="fa-solid fa-rotate-right"  style="color: blue;"></i></button>
+    </div> <br> <br>
+    <input type="text" id="captchaInput" placeholder="Enter Captcha..."  > <button onclick="captchaCheck()">check</button>
+    <p id="demo1"></p>
+
+    <script>
+        function randomCaptcha() {
+            const captcha = ["mdQUk1", "vKGwq2", "utBUns", "2Dmksg", "4KhjSl"];
+            let randomIndex = Math.floor(Math.random() * captcha.length);
+            let index = captcha[randomIndex];
+            document.getElementById("demo").innerHTML = index;
+            return index;
+        }
+        
+        function captchaCheck(){
+            let captchaInput = document.getElementById("captchaInput").value;
+            let generatedCaptcha = randomCaptcha();
+            
+            if (captchaInput === generatedCaptcha) {
+                document.getElementById('demo1').innerHTML = "true";
+            } else {
+                document.getElementById('demo1').innerHTML = "false";
+            }
+        }
+    </script>
+</body>
+
+</html>

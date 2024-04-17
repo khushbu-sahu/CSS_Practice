@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .para{
+        background-color: lightcoral;
+        color: pink;
+    }
+    .newClass{
+        background-color: aqua;
+        color: black;
+    }
+</style>
+<body>
+    <!-- <h2>This is a heading</h2>
+<p> QUE-01....Create a new button element.Give it a text "click me",background color of red and text color of white,  Insert the button as the first element inside the body tag.</p> -->
+
+    <!-- <script>
+        let newBtn=document.createElement("button");
+        newBtn.innerText="click me!";
+        console.log(newBtn);
+        newBtn.style.backgroundColor ="red";
+        newBtn.style.color = "white";
+
+        let btn=document.querySelector("body");
+        btn.prepend(newBtn);
+
+    </script> -->
+
+
+   <!-- <p>QUE-02....  Create a p tag in html, give it a class & some styling .Now create a new class in CSS and try to append this class to the p element  .  Did you notice , how you overwrite the class name when you add a new one ? Solve this problem using classList</p>  -->
+
+   <p class="para"> This is a paragraph</p>
+
+<script>
+let paragraph=document.querySelector("p");
+console.log(paragraph);  
+let value=  paragraph.getAttribute("class");  
+console.log(value);
+
+// let value1=   paragraph.setAttribute("class", "newClass");
+// console.log(value1);
+
+//For Adding  new class in the existing class but not overwrite
+let val = paragraph.classList.add("newClass");
+console.log(val);
+
+
+//For removing the class
+paragraph.classList.remove("newClass");
+</script>
+
+
+</body>
+</html>

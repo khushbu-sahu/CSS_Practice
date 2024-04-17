@@ -4,13 +4,16 @@
 <head></head>
 
 <body>
+    <!-- Create a function to reverse a string. -->
     <p>Create a function to reverse a string.</p>
-    <p id="reverse"></p>
+    <p id="demo"></p>
     <script>
-        // let string = prompt("please enter any name");
-        let n = prompt("enter the value of n");
-        console.log(n.split("").reverse());
+     function revString(str){
+    const strRev = str.split('').reverse().join('');
+    console.log(strRev);
+     }
 
+     revString("Hello");
 
     </script>
 </body>

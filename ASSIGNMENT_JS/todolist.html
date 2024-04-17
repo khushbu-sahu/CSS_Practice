@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            /* text-align: center; */
+            /* margin: 150px; */
+            background-color: rgb(235, 235, 168);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>To-Do-List</h2>
+        <input id="taskInput" type="text" placeholder="Enter any name here...">
+        <button id="addButton" onclick="addToDo()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script>
+        let userInput = document.getElementById("taskInput");
+        let todoList = document.getElementById("taskList");
+
+        function addToDo() {
+            let inputValue = userInput.value.trim();
+
+            if (inputValue !== "") {
+            
+                todoList.innerHTML += `<li>${inputValue}</li>`
+                userInput.value="";
+
+            }
+            // inputValue.value="";
+        }
+
+
+    </script>
+</body>
+
+</html>

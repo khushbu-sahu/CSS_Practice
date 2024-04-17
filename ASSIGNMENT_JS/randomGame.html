@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Create a game where you start with any random game nummber.Ask the user to keep guessing the game number until
+        the user enters correct value.</p>
+    <p id="demo"></p>
+
+    <script>
+        let gameNum = 25;
+
+        let userNum = prompt("guess the game number :");
+
+        while (userNum != gameNum) {
+            userNum = prompt("You enterd wrong number.Guess again:");
+
+        }
+        // document.getElementById("demo").innerHTML = userNum;
+        document.getElementById("demo").innerHTML ="congratulations , you enter the right number";
+        console.log("congratulations , you enter the right number");
+
+    
+
+    </script>
+</body>
+
+</html>
