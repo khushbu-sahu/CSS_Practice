@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>QUE--You are creating a website for your college. Create  a class User with 2 properties , name and email. It also has a method called viewDate()that allows user to view website data.</p>
+
+    <script>
+        let DATA = "secret information";
+        class User{
+            constructor(name,email){
+                this.name = name;
+                this.email = email;
+            }
+            viewData(){
+                console.log(" data= ", DATA);
+            }
+        }
+
+        let student1 = new User("khushi","sahukhushbu191@gmail.com");
+        console.log(student1);
+        console.log(student1.viewData());
+        let student2 = new User("purvi","abc@gmail.com");
+        console.log(student2);
+
+    </script>
+</body>
+</html>

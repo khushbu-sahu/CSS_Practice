@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>QUE--Create a new class called Admin which inherits from user.Add a new methods called editData to Admin that
+        allows it to edit website data.</p>
+
+    <script>
+        let DATA = "secret information";
+        class User {
+            constructor(name, email) {
+                this.name = name;
+                this.email = email;
+            }
+            viewData() {
+                console.log(" data= ", DATA);
+            }
+        }
+
+        class Admin extends User {
+            constructor(name, email) {
+                super(name, email);
+            }
+            editData() {
+                DATA = "some new value";
+            }
+        }
+
+        let admin1 = new Admin("lishika", "lishi12@gmail.com");
+        console.log(admin1);
+    </script>
+</body>
+
+</html>
