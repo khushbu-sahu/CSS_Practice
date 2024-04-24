@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //FOR POSTING METHOD
+        const posturl ='https://jsonplaceholder.typicode.com/todos/'
+
+        const mydata1={username:'Khushbu sahu' , email:'sahukhushbu191@gmail.com'}
+        postapi = fetch(posturl,{
+            method:'POST',
+            headers:{'Content-Type':"application/json"},
+            body:JSON.stringify(mydata1)
+        })
+
+        postapi.then(res=>res.json()).then((data)=>{console.log(data)})
+
+
+        //FOR PUT METHOD
+        const puturl='https://jsonplaceholder.typicode.com/todos/'
+        const putdata={username:'Khushboo sahu' , email:'sahukhushbu191@gmail.com'}
+
+        putapi=fetch(posturl,{
+
+            method:'PUT',
+            headers:{'Content-Type':"application/json"},
+            body:JSON.stringify(mydata1)
+
+        })
+
+        putapi.then(res=>res.json()).then((data)=>{console.log(data)})
+
+
+    </script>
+</body>
+</html>
+
+
+

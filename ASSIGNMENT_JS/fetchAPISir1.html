@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+    <h3>Fetch API</h3>
+    <script>
+
+        const url='https://jsonplaceholder.typicode.com/todos/'
+
+        // GET
+        getapi=fetch(url)
+        getapi.then(res=>res.json()).then((data)=>{console.log(data)})
+
+        // POST
+const posturl='https://jsonplaceholder.typicode.com/todos/'
+
+const mydata1={username:'khushbu sahu', email:'sahukhushbu191@gmail.com'}
+postapi=fetch(posturl,{
+
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify(mydata1)
+
+})
+
+postapi.then(res=>res.json()).then((data)=>{console.log(data)})
+
+
+//PUT METHOD
+
+const putturl='https://jsonplaceholder.typicode.com/todos/1'
+const putdata={username:'khushboo sahu' , email:'sahukhushbu19@gmail.com'}
+
+
+putapi = fetch(putturl,{
+
+    method:'PUT',
+    headers:{'Content-Type' : "application/json"},
+    body:JSON.stringify(putdata)
+})
+
+putapi.then(res=>res.json()).then((data)=>{console.log(data)})
+
+//DELETE METHOD
+const deleteurl='https://jsonplaceholder.typicode.com/todos/1'
+
+deleteapi=fetch(deleteurl,{
+
+    method:'DELETE',
+  
+
+})
+deleteapi.then((res)=>{
+    if(res.ok){
+        console.log("yes data is deleted")
+    }else{
+        console.log("no deleted")
+    }
+}).catch((error)=>{console.log(error)})
+    </script>
+</body>
+</html>
