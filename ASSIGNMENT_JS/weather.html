@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        text-align: center;
+        padding-top: 150px;
+        background-color: lightgoldenrodyellow;
+    }
+</style>
+<body>
+    <h1>Weather Project</h2>
+
+    <div>
+    <input type="text" id="inp" placeholder="Enter City Name"> 
+    <button id="button" onclick="getdata()">Submit</button>
+</div>
+
+<div >
+<h2 id="city"></h2>
+<h2 id="temp"></h2>
+<h2 id="type"></h2>
+</div>
+
+<script>
+    let input=document.getElementById('inp')
+    let temp=document.getElementById('temp')
+    let type=document.getElementById('type')
+    let city=document.getElementById('city')
+    let API_KEY='80f4797e6994727b78502522e5f0d12e' ;
+
+    const data = async function(search){
+
+        let myData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${API_KEY}&units=metric`)
+        console.log(myData)
+
+        let jsonData = await myData.json()
+        console.log(jsonData);
+
+        city.innerHTML = input.value;
+        temp.innerHTML=Math.floor(jsonData.main.temp) + '°C'
+        type.innerHTML = jsonData.weather[0].main
+
+    }
+
+    function getdata(){
+        search = input.value;
+        data(search)
+    }
+
+</script>
+</body>
+</html>
